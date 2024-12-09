@@ -1,23 +1,42 @@
+/* Estilos generales del cuerpo */
+body {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco para contraste */
+  font-family: Arial, sans-serif; /* Fuente limpia */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #222; /* Fondo oscuro para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #fff; /* Borde blanco alrededor */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Sombra suave para el borde */
 }
 
+/* Logo */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  margin-bottom: 20px;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animación del logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +52,94 @@
   }
 }
 
+/* Estilo para las tarjetas de indicadores */
 .card {
+  background-color: #333; /* Fondo oscuro de la tarjeta */
   padding: 2em;
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 1em 0;
+  border: 2px solid #444; /* Borde más suave para las tarjetas */
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1); /* Sombra suave */
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilo para los indicadores (color de texto, bordes y distribución) */
+.indicator {
+  background-color: #444; /* Fondo ligeramente más claro */
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 10px;
+  border: 1px solid #555; /* Borde del indicador */
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Contenedor de la grilla */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye los items de manera uniforme */
+  gap: 1rem; /* Espacio entre los elementos */
+  margin: 0 auto;
+}
+
+/* Estilo para los controles y tablas */
+table, th, td {
+  border: 1px solid #555; /* Borde de la tabla */
+  border-collapse: collapse;
+  color: #fff; /* Texto blanco para contraste */
+}
+
+table {
+  width: 100%;
+  background-color: #333; /* Fondo oscuro para la tabla */
+}
+
+th, td {
+  padding: 0.8em;
+  text-align: left;
+}
+
+th {
+  background-color: #444; /* Fondo de las cabeceras de la tabla */
+}
+
+tr:nth-child(even) {
+  background-color: #444; /* Filas alternas de color más claro */
+}
+
+tr:nth-child(odd) {
+  background-color: #333; /* Filas alternas de color más oscuro */
+}
+
+/* Estilo para los gráficos */
+.line-chart-container {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 2em;
+  margin-top: 20px;
+  border: 2px solid #444;
+}
+
+/* Estilo para los botones y controles */
+button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #777; /* Color más claro al pasar el ratón */
+}
+
+/* Estilo para las tarjetas de clima */
+.control-weather {
+  background-color: #444;
+  padding: 2em;
+  border-radius: 8px;
+  margin: 1em 0;
+  border: 1px solid #555;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
 }
