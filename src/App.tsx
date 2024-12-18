@@ -48,7 +48,7 @@ function App() {
 
 
               {/* Request */}
-              let API_KEY = "OPENWEATHERMAP' API KEY"
+              let API_KEY = "58a5ba23d2871a86fa8983817686e99b"
               let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
               let savedTextXML = await response.text();
 
@@ -82,6 +82,7 @@ function App() {
             {/* Arreglo para agregar los resultados */}
 
             let dataToIndicators : Indicator[] = new Array<Indicator>();
+            
 
             {/* 
                 Análisis, extracción y almacenamiento del contenido del XML 
@@ -109,7 +110,7 @@ function App() {
                 
             }
 
-            const times = xml.getElementsByTagName('time');
+            let times = xml.getElementsByTagName('time');
         const dataToItems: Item[] = [];
 
         for (let i = 0; i < times.length && i < 6; i++) {

@@ -40,6 +40,9 @@
          // alert( idx );
          setSelected( idx );
 
+         if (descriptionRef.current !== null) {
+            descriptionRef.current.innerHTML = (idx >= 0) ? items[idx]["description"] : ""
+        }
        
 
      };

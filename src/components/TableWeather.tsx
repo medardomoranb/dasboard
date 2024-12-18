@@ -28,11 +28,11 @@ export default function BasicTable(props: MyProp) {
       <Table  aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Hora de inicio</TableCell>
+            <TableCell align="right">Hora de fin</TableCell>
+            <TableCell align="right">Precipitación</TableCell>
+            <TableCell align="right">Humedad</TableCell>
+            <TableCell align="right">Nubosidad</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
